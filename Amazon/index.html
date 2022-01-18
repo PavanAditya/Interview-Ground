@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main" align="center">
+        <h1>Image Carousel</h1>
+        <div class="carousel">
+
+            <!-- Image Slides -->
+            <div class="carousel-slide fade">
+                <img src="https://picsum.photos/id/1011/640/480" style="width: 100%" />
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://picsum.photos/id/1026/640/480" style="width: 100%" />
+            </div>
+            <div class="carousel-slide fade">
+                <img src="https://picsum.photos/id/1035/640/480" style="width: 100%" />
+            </div>
+            <!-- Image Slides -->
+
+            <!-- Next and Previous buttons -->
+            <a class="prev-arrow" id="prev-arrow" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next-arrow" id="next-arrow" onclick="changeSlide(1)">&#10095;</a>
+            <!-- Next and Previous buttons -->
+
+            <!-- Carousel Dots -->
+            <div class="carousel-dots" align="center">
+                <span class="dot" onclick="jumpToSlide(1)"></span>
+                <span class="dot" onclick="jumpToSlide(2)"></span>
+                <span class="dot" onclick="jumpToSlide(3)"></span>
+            </div>
+            <!-- Carousel Dots -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
